@@ -1,0 +1,66 @@
+<!-- This is a comment -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Money at Midnight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This is the Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Go back to the menu -->
+        <a class="back" href="../Irorion.html">← Back to the Menu</a>
+        <div class="card">
+            <img src="MAM/photos/fiona.jpg">
+        </div>
+
+        <div class="card">
+
+            <div class="title">May 8, 2026</div>
+            <audio controls src="MAM/audio/mam_5_8_26.mp3"></audio>
+
+            <div class="title">May 1, 2026</div>
+            <audio controls src="MAM/audio/mam_5_1_26.mp3"></audio>
+
+            <div class="title">April 24, 2026</div>
+            <audio controls src="MAM/audio/mam_4_24_26.mp3"></audio>
+
+            <div class="title">April 17, 2026</div>
+            <audio controls src="MAM/audio/mam_4_17_26.mp3"></audio>
+
+            <div class="title">April 10, 2026</div>
+            <audio controls src="MAM/audio/mam_4_10_26.mp3"></audio>
+
+        </div>
+
+        <div class="section-title"></div>
+
+        <div class="card">
+            <div class="title">Fiona - The Backstory</div>
+            <audio controls src="MAM/audio/backstory.mp3"></audio>
+        </div>
+
+    </div>
+
+    <!-- Stop multiple audio tracts playing at once -->
+    <script>
+        const players = document.querySelectorAll("audio");
+
+        players.forEach(p => {
+            p.addEventListener("play", () => {
+                players.forEach(other => {
+                    if (other !== p) other.pause();
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

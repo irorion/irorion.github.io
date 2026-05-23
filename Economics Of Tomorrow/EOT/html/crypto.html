@@ -1,0 +1,315 @@
+<!-- Start of html header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bitcoin</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- This is the Style Sheet -->
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="back" href="../../index.html">← Back to Top</a>
+
+        <!-- End of html header -->
+
+<h2>Cryptography</h2>
+<p> Humans have been trying to hide messages from enemies for as long as we've been 
+    writing them. The ancient Greeks used a device called a scytale — a wooden rod you'd 
+    wrap a strip of leather around, write your message across it, and then unwind. The strip 
+    looked like gibberish until you wrapped it around a rod of exactly the same diameter. 
+    Julius Caesar used an even simpler trick: shift every letter of the alphabet three places. 
+    A. becomes D, B becomes E, and so on. You could break it in minutes today, but it baffled 
+    most people in 50 BC.
+</p>
+<p> These were the earliest forms of what cryptographers call, substitution ciphers — 
+    replacing one symbol with another according to a rule. For centuries, the arms race 
+    between code-makers and code-breakers was essentially about making that rule more and 
+    more complicated.
+</p>
+<h3>The Enigma Machine</h3>
+<p> By World War II, the Germans had built a machine that took this idea to a breathtaking 
+    level of complexity. The Enigma machine looked like a typewriter, but it was really a 
+    fiendish mechanical scrambler. When you pressed a key, an electrical signal passed through 
+    a series of rotating rotors — each one scrambling the signal differently — then bounced off 
+    a reflector and came back through the rotors in reverse, lighting up a different letter on 
+    a display board.
+    The genius, and the terror, of Enigma was that the rotors rotated with every keystroke. 
+    So pressing A once might give you X, but pressing A again immediately after might give you 
+    Q. The starting position of the rotors changed every single day, based on a secret 
+    codebook. The number of possible settings ran into the hundreds of quintillions. German 
+    military commanders were absolutely convinced it was unbreakable.
+</p>
+<p> Every morning, the British listening stations at Bletchley Park would intercept fresh 
+    German radio traffic, and they would essentially be staring at a completely new lock. 
+</p>
+<p> This is where our next character enters the story. Here is a potted history.
+</p>
+<p> 1930s, German Enigma machine, Rotor-based polyalphabetic cipher.
+</p>
+<p> 1940s, Alan Turing & the Bombe, Logical attack on Enigma, Bletchley Park.
+</p>
+<p> 1950s, Turing test & prosecution, Computing Machinery and Intelligence, Father of computer science
+</p>
+<p> 1970s, Public key cryptography, RSA, Diffie-Hellman, Math, not mechanical rotors.
+</p>
+<p> 2008, Bitcoin & the blockchain, Satoshi Nakamoto white paper, Cryptography goes decentralised.
+</p>
+<h3>Alan Turing</h3>
+<p> Turing was a Cambridge mathematician with a mind that seemed to operate on a different plane 
+    from everyone else. Before the war, he'd already published a paper laying out the theoretical 
+    foundations of what we now call computing — the idea of a universal machine that could simulate 
+    any other machine by following rules. That paper, written in 1936, essentially invented the 
+    concept of software. When the war came and he landed at Bletchley Park, he approached Enigma not 
+    as a communications problem but as a logical problem. He figured that Jerman operators, being human, 
+    would make predictable choices — common phrases, standard openings, messages that had to contain 
+    certain words. He designed an electromechanical device called the Bombe that could rapidly test 
+    enormous numbers of Enigma settings, hunting for a configuration that would produce a known phrase. 
+    It didn't break Enigma in one shot — it narrowed the field from the impossible to the merely 
+    difficult. Analysts could then finish the job.
+</p>
+<p> The intelligence this produced, was code named, Ultra, and historians estimate it shortened the war 
+    in Europe by somewhere between two and four years. <em>Potentially millions of lives were saved 
+    by one man's genius.</em>
+</p>
+<p> After the war, Turing continued building what would become the modern computer, working on early 
+    machines at Manchester. And then in 1950 he asked one of the most provocative questions in the 
+    history of science: Can machines think? His paper proposed a test — now called the Turing Test 
+    — where a human interrogator chats with both a human and a machine, and if the interrogator can't 
+    reliably tell which is which, the machine has demonstrated something worthy of the word intelligence. 
+    We're still arguing about that question today.
+</p>
+<p> Then comes the trajic part of the story that is almost unbearable to read. In 1952, Turing was 
+    prosecuted by the British government for gross indecency — meaning he was gay, and homosexuality 
+    was a criminal offence in the UK. He was convicted and given a choice: prison, or chemical 
+    castration via injections of synthetic oestrogen. He chose the injections. In 1954, he was 
+    found dead in his bedroom, a half-eaten apple beside him laced with cyanide. The coroner ruled acidental suicide.</p>
+<em>He was 41 years old. The man who had done more than almost anyone to save his country was destroyed by it.
+</em>
+<p>The Apple logo — a bitten apple — was designed in 1977 by Rob Janoff. When people ask Steve Jobs 
+    whether the bite in the apple was a tribute to Alan Turing and his cyanide apple, Jobs reportedly 
+    said something along the lines of: "God, we wish it were true." Meaning: it wasn't intentional, but 
+    they loved the connection. The actual reason for the bite was reportedly just so the apple wouldn't 
+    look like a cherry at small sizes — the bite gives it a sense of scale. But the Turing interpretation 
+    has taken on a life of its own, because it feels so right — a computer company's logo as a quiet 
+    bittersweet tribute to the father of computing, who died by a poisoned apple. Rob Janoff himself 
+    has said it wasn't a conscious tribute, though he's acknowledged the poetry of the coincidence.
+</p>
+<p> Britain eventually gave Turing a formal royal pardon in 2013, nearly sixty years after his death. 
+    <em>A bit late.</em>
+</p>
+<h3>Enigma to Modern Encryption</h3>
+<p> The war's end didn't stop cryptographers — it lit a fire under them. If mechanical machines could be 
+    broken, what was truly unbreakable? The answer, worked out through the 1970s by mathematicians 
+    like Whitfield Diffy, Martin Hellman, and the RSA trio (Ron Rivist, Adi Shamir, and Len Adleman), 
+    was mathematical hardness. Instead of scrambling letters with rotors, you'd use mathematical problems 
+    that are trivially easy in one direction, but essentially impossible to reverse. Multiplying two huge 
+    prime numbers together takes a fraction of a second. Figuring out which two primes were multiplied to 
+    produce a 2048 digit number would take longer than the age of the universe, even with every computer 
+    on Earth working on it. That asymmetry is modern encryption. It's what protects your banking app, your 
+    messages, every HTTPS connection you make.
+</p>
+<h3>Public Key Cryptography</h3>
+<p> The modern public-key cryptography system normally taught in universities begins in the 1970s with 
+    work by Whitfield Diffie and Martin Hellman at Stanford University, followed soon after by the 
+    RSA system developed by Ron Rivest, Adi Shamir, and Leonard Adleman. Their work transformed 
+    secure communications and underpins much of today’s internet security.
+</p>
+<p> But decades later, it emerged that key elements of the same ideas had already been discovered in 
+    secret inside the British signals intelligence world.</p><p>The story centres on GCHQ, the postwar 
+    successor to the wartime codebreaking operation at Bletchley Park. During the late 1960s and 
+    early 1970s, several brilliant British mathematicians working in extreme secrecy independently 
+    developed concepts astonishingly close to modern public-key cryptography.
+</p>
+<p> The first breakthrough came from James Ellis. In 1969 he proposed what he called “non-secret 
+    encryption. "At the time, all practical encryption required both parties to share a secret 
+    key beforehand - a huge logistical problem. Ellis realised, theoretically, that it might be 
+    possible to encrypt messages without first exchanging a secret key. The trouble was, he could 
+    not figure out how to implement it mathematically.
+</p>
+<p> Then came Clifford Cocks, a young mathematician at GCHQ. In 1973, just days after hearing Ellis's 
+    idea, Cocks devised a practical mathematical system based on the difficulty of factoring large 
+    prime numbers. It was, in essence, RSA - three years before the American RSA team published their 
+    work publicly. Cocks reportedly wrote the solution in a notebook almost casually, not fully 
+    realising how historically important it would become.
+</p>
+<p> Soon after that, another GCHQ mathematician, Malcolm Williamson, developed a method closely 
+    resembling the later Diffie–Hellman key exchange system. Again, this was discovered independently 
+    and in secret before the public academic version appeared in the United States.
+</p>
+<p> The tragedy, in a way, is that none of this work could be published. GCHQ classified it all. 
+    The British government regarded these techniques as too strategically valuable to reveal. 
+    As a result, the open scientific world had no knowledge of the discoveries. The Americans 
+    therefore reinvented the same core ideas independently — and because they published openly, 
+    they received the recognition.
+</p>
+<p> Years later, after some of the British work was declassified in the 1990s, members of the 
+    American cryptographic community visited Britain and examined the old documents. Whitfield 
+    Diffie himself became deeply interested in the story and publicly acknowledged the significance 
+    of the British achievements. There was understandable surprise - even disbelief at first - 
+    because the GCHQ papers predated the published American work so clearly.
+</p>
+<p> The connection to Bletchley Park is partly institutional and partly cultural. The actual 
+    discoveries were made after the war at GCHQ facilities rather than inside wartime Bletchley 
+    itself, but GCHQ inherited much of the mathematical and cryptanalytic tradition established 
+    there by figures like Alan Turing and his colleagues. In that sense, the intellectual lineage 
+    runs directly from wartime codebreaking to modern internet cryptography.
+</p>
+<p> Today, historians generally give credit to both groups. The British invented the ideas first 
+    in secret; the Americans invented them independently and brought them into the public world, 
+    where they transformed computing, commerce and communications forever.
+</p>
+<h3> Clifford Cocks </h3>
+<p> Clifford Cocks studied mathematics at King's College, Cambridge. He then began postgraduate 
+    work at Oxford before leaving academia to join GCHQ in 1973.
+</p>
+<p> His mathematical speciality was number theory - exactly the branch of mathematics that later 
+    became central to modern cryptography. Number theory deals with the properties of integers, 
+    especially prime numbers, modular arithmetic, factorisation, congruences, and related structures.
+</p>
+<p> That background was crucial. The brilliance of RSA-style public-key cryptography comes from 
+    exploiting a mathematical asymmetry: multiplying two very large prime numbers together is easy, 
+    but factoring the resulting huge composite number back into its original primes is extremely 
+    hard. Cocks immediately recognised that this "one-way function" might solve James Ellis's 
+    "non-secret encryption" problem because he was already immersed in number-theoretic thinking.
+</p>
+<p> There's a wonderful detail in the story. According to later interviews, when Ellis's problem was 
+    explained to him at GCHQ, Cocks essentially solved the core idea overnight — some accounts even 
+    say within half an hour. He later remarked that the problem had been presented to him "in a very 
+    mathematical way," and because he had been working in number theory, prime factorisation naturally 
+    suggested itself.
+</p>
+<p> He had also been an exceptionally gifted young mathematician. While at Manchester Grammar School 
+    he won a silver medal at the International Mathematical Olympiad in 1968. Interestingly, another 
+    future GCHQ cryptographer, Malcolm Williamson, was at the same school and also went on to Cambridge.
+</p>
+<p> One of the striking things about Cocks is how understated he remained about the whole affair. 
+    By temperament he seems much more like a pure mathematician than a Silicon Valley entrepreneur. 
+    Had the work been public, he could have become enormously wealthy from one of the foundational 
+    inventions of the internet age. Instead, the discovery disappeared into classified files for 
+    nearly a quarter of a century.
+</p>
+<h3>Modular Ariithmetic </h3>
+<p> "Clock arithmetic" is the informal name for modular arithmetic, and modular arithmetic sits right 
+    at the heart of RSA-style public-key cryptography.
+</p>
+<p> For example, on a 12-hour clock:
+</p>
+<p> 9 + 5 = 2 (mod 12)
+</p>
+<p> You "wrap around" after reaching 12. In number theory, mathematicians generalise this idea to enormous 
+    numbers — hundreds or thousands of digits long.
+</p>
+<p> Clifford Cocks was fundamentally a number theorist, and modular arithmetic was one of the essential 
+    tools of his field. RSA encryption relies on properties of modular exponentiation - raising huge 
+    numbe's to huge powers while taking remainders modulo another huge number.
+</p>
+<p> A tiny toy example looks like this:
+</p>
+<p> 7^4 = 1 (mod 20)
+</p>
+<p> For ordinary people, that looks obscure. But for cryptographers, these modular relationships create 
+    mathematical "trapdoors." Some operations are easy to perform one way, but extraordinarily difficult 
+    to reverse unless you possess special information - namely the private key.
+</p>
+<p> The brilliance of RSA is that it combines:<br>
+- prime numbers,<br>
+- modular arithmetic,<br>
+- Euler’s theorem,<br>
+- and the difficulty of factorising huge composite numbers.<br'
+</p>
+<p> Cocks already knew this mathematical territory intimately. So when James Ellis proposed the idea of 
+    "non-secret encryption," Cocks immediately recognised that modular arithmetic with large primes might provide the missing mechanism.
+</p>
+<p> What's remarkable is that the mathematics itself was not especially exotic by pure mathematics 
+    standards. Much of it dated back to Euler in the 18th century and even to Fermat in the 17th. 
+    The genius lay in realising that ancient number theory could solve a modern communications problem.
+</p>
+<p> That's one of the lovely ironies of cryptography: ideas developed centuries ago for pure 
+    intellectual curiosity became the foundation of secure internet commerce, banking, passwords, 
+    and encrypted messaging.
+</p>
+<h3> Alice and Bob</h3>
+<p> The classic "Alice and Bob" demonstration of RSA encryption uses very small prime numbers so humans 
+    can follow the arithmetic by hand. Real systems use primes hundreds of digits long, but the miniature 
+    version shows the mechanism beautifully.
+</p>
+<p> First, Alice chooses two prime numbers:
+</p>
+<p> p = 5, q = 11
+</p>
+<p>She multiplies them:
+</p>
+<p> n = pq = 55
+</p>
+<p> Then she computes Euler’s totient:
+</p>
+<p> phi(n) = (5 - 1)(11 - 1) = 40
+</p>
+<p> Now Alice chooses a public encryption exponent that has no common factor with 40. 
+    A common toy choice is:
+</p>
+<p> e = 3
+</p>
+<p>
+Next she must find a private decryption exponent d such that:
+</p>
+<p> ed = 1 (mod 40)
+</p>
+<p> Since
+</p>
+<p>3 x 27 = 81 = 1 (mod 40)
+</p>
+<p> the private key is:
+</p>
+<p> d = 27
+</p>
+<p> So Alice publishes the public key:
+</p>
+<p>(e,n) = (3,55)
+</p>
+<p> but keeps d = 27 secret.
+</p>
+<p> Now Bob wants to send Alice the message 17. He encrypts it using Alice's public key:
+</p>
+<p> c = 17^3 mod 55
+</p>
+<p> Calculate it:
+</p>
+<p> 17^3 = 4913
+</p>
+<p> and dividing by 55 leaves remainder 18, so the encrypted ciphertext becomes:
+</p>
+<p> c = 18
+</p>
+<p> An eavesdropper sees only 18.
+</p>
+<p> Alice now decrypts using her secret exponent:
+</p>
+<p> m = 18^27 mod 55
+</p>
+<p> After all the modular arithmetic, the result comes back to:
+</p>
+<p> m = 17
+</p>
+<p>- the original message.
+</p>
+<p> What astonished cryptographers in the 1970s was not merely that this worked, but that Alice 
+    and Bob never needed to exchange a secret key beforehand. Alice could publish her public key 
+    openly for the entire world to see. Yet only she, possessing the private exponent d, could 
+    efficiently decrypt the message.
+</p>
+<p> That conceptual leap - separating the encryption key from the decryption key - was the revolutionary 
+    part. Before that, cryptography was mostly symmetrical: both sides needed the same secret key in 
+    advance. Public-key cryptography changed everything.
+</p>
+
+ <p><a class="back" href="contents.html">← contents</a></p>
+ </div>
+       
+</body>
+</html>

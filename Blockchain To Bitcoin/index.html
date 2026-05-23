@@ -1,0 +1,84 @@
+<!-- This is a comment -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>B2B</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is the Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Go back to the menu -->
+        <a class="back" href="../Irorion.html">← Back to the Menu</a>
+        <div class="card"> <img src="BTB\BTB.jpg"> </div>
+
+        <div class="card">
+            
+            <video controls src="BTB\video\JesseMyers1.mp4"></video>
+            <div class="title">Jesse Myers - The Smarter Web Company</div>
+            
+            <h1></h1>
+            <video controls src="BTB\video\JesseMyers2.mp4"></video>
+            <div class="title">Jesse Myers - Part 2</div>
+            <h1></h1>
+
+            <video controls src="BTB\video\JamesBurnie.mp4"></video>
+            <div class="title">James Burnie - Partner at GunnerCooke LLP</div>
+            <h1></h1>
+
+            <video controls src="BTB\video\ScottEllamP1.mp4"></video>
+            <div class="title">Scott Ellam - Bitcoin vs Crypto vs Fiat finally explained clearly.</div>
+            <h1></h1>
+ 
+            <video controls src="BTB\video\ScottEllamP2.mp4"></video>
+            <div class="title">Scott Ellam - Part 2</div>
+            <h1></h1>
+
+
+            <video controls src="BTB\video\JamieKnowles.mp4"></video>
+            <div class="title">Jamie Knowles on Bitcoin - People Are Moving First...Then Capital Follows</div>
+            <h1></h1>
+
+            <video controls src="BTB\video\JasonDeane.mp4"></video>
+            <div class="title">Jason Deane - How Bitcoin Mining can transform UK Energy infrastructure</div>
+            <h1></h1>
+            
+            <video controls src="BTB\video\TonyWard.mp4"></video>
+            <div class="title">Bitcoin for Business with Tony Ward - Bitcoin Treasury Advisory.</div>
+            <h1></h1>
+
+            <video controls src="BTB\video\MichaelWhite.mp4"></video>
+            <div class="title">Michael White - From Traditional Banking to Bitcoin: Why the System Has to Change</div>
+            <h1></h1>
+
+            <video controls src="BTB\video\HughDuffy.mp4"></video>
+            <div class="title">Hugh Duffy and the Deep Economic Paradox</<div>
+            
+           
+            <h1></h1>
+            <video controls src="BTB\video\JezCasey.mp4"></video>
+            <div class="title">Jez Casey - The Bitcoin Collective & Bitcoin Business Network</div>
+           
+
+        </div>
+    </div>
+<!-- Stop multiple audio tracts playing at once -->
+<script>
+const players = document.querySelectorAll("video");
+
+players.forEach(p => {
+    p.addEventListener("play", () => {
+        players.forEach(other => {
+            if (other !== p) other.pause();
+        });
+    });
+});
+
+</script>
+</body>
+
+</html>
