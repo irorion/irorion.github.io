@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spanish Police System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is the Style Sheet -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Go back to the menu -->
+        <a class="back" href="../index.html">← Back to the Menu</a>
+        <h1>Spanish Police System</h1>
+
+        <img src="SPS/Police.jpg">
+        <p><!-- This is to make a space --></p>
+
+        <h2>Advantages</h2>
+        <p>
+            There are 3 major advantages of the system. It offers the ability to:
+        <blockquote>
+            1. Fire from a concealed position<br>
+            2. Share information securly<br>
+            3. Record tamper-proof evidence.<br>
+        </blockquote>
+        </p>
+        <p>
+            The system is designed to be modular, allowing for easy upgrades and maintenance. It can use AI and machine
+            learning algorithms to help improve the accuracy and efficiency of the system. It can be used to enhance
+            the safety and security of police officers and the public, and can gather and analyze data to help inform
+            decision-making and improve policing strategies.
+        </p>
+
+        <h3>The Systems</h3>
+        <p>
+            The proposed system consists of 5 pieces
+        <blockquote>
+            1. Computer system<br>
+            2. Software package<br>
+            3. Head Up Display<br>
+            4. Ground/Drone Camera<br>
+            5. Gun with Flashlight<br>
+        </blockquote>
+        </p>
+        <h4>Computer System</h4>
+        <p>show some maps</p>
+
+        <h4>The Software Package</h4>
+        <p>show some maps</p>
+
+        <h4>The Head Up display</h4>
+        <img src="SPS/HeadUpDisplay.jpg">
+
+        <h4>The Ground Camera</h4>
+        <img src="SPS/TapoCamera.jpg">
+
+        <h4>The Drone Camera</h4>
+        <img src="SPS/DroneCamera.jpg">
+
+        <h4>The Gun with Flashlight</h4>
+        <img src="SPS/GunWitthFlashlight.jpg">
+
+    </div>
+
+
+    <!-- Stop multiple video tracts playing at once -->
+    <script>
+        const players = document.querySelectorAll("video");
+
+        players.forEach(p => {
+            p.addEventListener("play", () => {
+                players.forEach(other => {
+                    if (other !== p) other.pause();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

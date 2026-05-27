@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- This is the Style Sheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
 </head>
 
@@ -49,19 +49,18 @@
 
     </div>
 
-    <!-- Stop multiple audio tracts playing at once -->
-    <script>
-        const players = document.querySelectorAll("audio");
+<!-- Stop multiple audio tracts playing at once -->
+<script>
+const players = document.querySelectorAll("audio");
 
-        players.forEach(p => {
-            p.addEventListener("play", () => {
-                players.forEach(other => {
-                    if (other !== p) other.pause();
-                });
-            });
+players.forEach(p => {
+    p.addEventListener("play", () => {
+        players.forEach(other => {
+            if (other !== p) other.pause();
         });
+    });
+});
+</script>
 
-    </script>
 </body>
-
 </html>

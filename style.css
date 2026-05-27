@@ -16,25 +16,25 @@ body {
 h1 {
     font-size: 24px;
     text-align: left;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     letter-spacing: 1px;
 }
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     letter-spacing: 1px;
 }
 h3 {
-    font-size: 14px;
+    font-size: 18px;
     text-align: left;
     margin-bottom: 14px;
     letter-spacing: 1px;
 }
 h4 {
-    font-size: 12px;
+    font-size: 16px;
     text-align: left;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     letter-spacing: 1px;
 }
 h5 {
@@ -98,16 +98,4 @@ a {
   background-color: gray;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-
-<!-- Stop multiple audio tracts playing at once -->
-
-const players = document.querySelectorAll("audio");
-
-players.forEach(p => {
-    p.addEventListener("play", () => {
-        players.forEach(other => {
-            if (other !== p) other.pause();
-        });
-    });
-});
-
+q

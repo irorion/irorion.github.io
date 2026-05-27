@@ -6,14 +6,15 @@
     <title>Land Warrior History</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- This is the Style Sheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body> 
+    
 <div class="container">
 <!-- Go back to the menu -->
 <a class="back" href="../index.html">← Back to the Menu</a>
-<h6>US DEFENSE DEPARTMENT</h6>
+<h1>US DEFENSE DEPARTMENT</h1>
 <div class="card">
 <img src="LWH/LWH1.jpg">
            
@@ -176,5 +177,18 @@ In late 2000, Duffy sold Pacific Consultants to PEMSTAR, a Minisota-based contra
 
 </div>
 </div>
+
+<!-- Stop multiple video tracts playing at once -->
+<script>
+const players = document.querySelectorAll("video");
+
+players.forEach(p => {
+    p.addEventListener("play", () => {
+        players.forEach(other => {
+            if (other !== p) other.pause();
+        });
+    });
+});
+</script>
 </body>
 </html>
