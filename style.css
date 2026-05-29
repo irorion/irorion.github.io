@@ -12,6 +12,11 @@ body {
     padding: 12px;
 }
 
+p {
+    text-align: justify;
+    hyphens: auto;
+}
+
 <!-- Header formats - 1 to 4 left aligned-->
 h1 {
     font-size: 24px;

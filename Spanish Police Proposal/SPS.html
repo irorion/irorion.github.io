@@ -14,11 +14,11 @@
         <!-- Go back to the menu -->
         <a class="back" href="../index.html">← Back to the Menu</a>
         <h5>Spanish Police Proposal</h5>
-          <p></p>
+        <p></p>
         <img src="SPS/Duffy.jpg">
-      
-         <div class="title">Duffy's Short Introduction to Irorion SL</div>
-            <audio controls src="SPS/Duffy.mp3"></audio>
+
+        <div class="title">Duffy's Short Introduction to Irorion SL</div>
+        <audio controls src="SPS/Duffy.mp3"></audio>
         <p><!-- This is to make a space -->
         </p>
         <h2>Introduction to Irorion SL</h2>
@@ -122,9 +122,26 @@
         </p>
 
         <h4>The Entire System</h4>
-        <img src="SPS/OfficerOutfited.jpg">
+        <img src="SPS/WholeLot.jpg">
         <p>
-            Bla Bla k
+            On the screen of the mobile phone in my left hand, you can see the view in the head-up display, which is
+            showing the view from the ground camera on the office wall. The gun with the laser pointer and flashlight is
+            in my right hand. The mobile in my left hand would normally be in a pouch on my belt and I would isssue
+            voice commands to the mibile,but I am holding it up to show the screen.
+        </p>
+
+        <h4>The System in Action</h4>
+        <p></p>
+        <video controls src="SPS\vid1.mp4"></video>
+        <div class="title">The Scene From Across The Hall</div>
+        <p></p>
+        <video controls src="SPS\vid2.mp4"></video>
+        <div class="title">The Ground Camera/Head Up Display</div>
+        <p></p>
+        <p>
+            Here I shown 2 videos: One is a demonstration of the system in action, and the other is showing the scene
+            from outside the office. Both videos are of the same event, so the sound track should be the same for both.
+
         </p>
 
         <h1>Funding</h1>
@@ -156,15 +173,20 @@
             The business plan can be written relatively quickly by AI agents. I believe I can do this in a day or two.
         </p>
         <p>
-            5. A managment team that's "done it before"
+            5. A managment team that's "done it before"<br>
+            I have already built a successful business in the past, and I had the US Defence Department as my committed
+            lead customer. I have a team of experienced professionals who have the skills and expertise to help me grow
+            this business and make it successful.
         </p>
         <p>
-            If you have all 5, you get to keep (up to) half the business. If you have 4, you get to keep maybe 5%. If
-            you have three, don't bother to call; they'll just hang up.
+            If you have all 5 of the requirements, the VC's may let you keep (up to) half the business. If you have 4,
+            you maybe get to keep 5%. If you have only three, don't bother to call the VC's; they'll just hang up.
         </p>
         <p>
             I believe we have all 5 bases covered. I have already agreed to give a few other founder members a few
-            percent of the shares, and I believe we can attract the remainder of the talent need for an additional small fraction of the stock. Irorion is in a good position to attract the funding it needs to getstarted and grow into a successful business.
+            percent of the shares, and I believe we can attract the remainder of the talent need for an additional small
+            fraction of the stock. Irorion is in a good position to attract the funding it needs to getstarted and grow
+            into a successful business.
         </p>
 
         <h1>Lets do it!</h1>
@@ -174,24 +196,25 @@
         </p>
         <p>
             Name: Hugh Duffy<br>
-            Email: hughdro@icloud.com<br>
+            Web Site: irorion.github.io irorion.eu<br>
+            Email: irorion.eu@yahoo.com<br>
             Phone: +34 684 256 571<br>
         </p>
         <a class="back" href="../index.html">← Back to the Menu</a>
     </div>
 
     <!-- Stop multiple video tracts playing at once -->
-<script>
-const players = document.querySelectorAll("video");
+    <script>
+        const players = document.querySelectorAll("video");
 
-players.forEach(p => {
-    p.addEventListener("play", () => {
-        players.forEach(other => {
-            if (other !== p) other.pause();
+        players.forEach(p => {
+            p.addEventListener("play", () => {
+                players.forEach(other => {
+                    if (other !== p) other.pause();
+                });
+            });
         });
-    });
-});
-</script>
+    </script>
 
 </body>
 
