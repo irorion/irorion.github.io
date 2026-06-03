@@ -1,0 +1,26 @@
+[[slnc 2000]]
+In this short demonstration, we will show the CopCam in action.
+[[slnc 2000]]
+The officer enters the crime scene and either uses the existing security cameras, or deploys cameras using air or land drones. In this demonstration, we will use the existing security cameras. 
+[[slnc 1000]]
+You will recall that security cameras can zoom in and out, pan left and right, and move up and down. In addition they can use night vision to see in the dark, or illuminate the scene and take color video. With AI assistance, they can identify a suspect, search a police database, or perform several other identification tasks.
+[[slnc 1000]]
+The camera in the home owner's office, is viewed by the officer on his head up display. The camera in the hallway is shown as a typical view of the overall scene.  
+[[slnc 1000]]
+The first step is to view the security footage and ass-es where the suspect is located. He appears to be seated at the desk in the home owner's office. The officer approachess the office door, and without revealing his position, points his weapon, with a laser spot device and a focusable flashlight, around the corner of the doorway and into the office, without exposing himself. [[slnc 700]]Shooting around corners, is the phrase that is often misused.
+[[slnc 1000]]
+The flashlight can be focused to make a large area of illumination, or a small intense spot. When focused to a small spot, the infra-red laser light is almost invisable, and the flashlight spot is all that is needed. Many modes of illumination are possible from the camera, or from the officers weapon
+[[slnc 1000]]
+The officer is able to talk to the suspect directly, or over the camera wireless, or by mobile phone. In this case, given the proximity, he is able to speak to the suspect directly. 
+[[slnc 700]]
+The conversation, like the video, is recorded by the officers wareable computer. The video is uploaded to the police computers as an encrypted file. The file is tamper-proof, and includes the meta data, ensuring that the file complies with the chain-of-evidence regulations.
+[[slnc 1000]]
+The video can be viewed in real time by his fellow officers, either at the scene, in the car, or back at police headquarters.
+[[slnc 1000]]
+The record may includes a map of the location of the incident, the location of his fellow officers, and the surrounding buildings. When in map mode, the view is like a traffic map: google maps or apple maps. The subjects can be seen to move on the map. Their location and speed can be monitored.
+[[slnc 1000]]
+It's important to remember, that the object of the CopCam is not to shoot more suspects, but to ensure that the officer  [[slnc 500]] NEVER [[slnc 500]]  has to fire his weapon.
+[[slnc 1000]]
+And there you have it.  A demonstration of the CopCam - in a nutshell.
+[[slnc 1000]]
+----------------------------------------------------------------------------
