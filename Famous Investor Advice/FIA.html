@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is the Style Sheet -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Go back to the menu -->
+        <a class="back" href="../index.html">← Back to the Menu</a>
+
+        <div class="card"> <img src="FIA\bitcoin.jpg">
+            <h2>Bitcoin</h2>
+                Here are the major numbers for 2026, rounded for simplicity.
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Approx Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>World GDP</td>
+                        <td>$126T</td>
+                    </tr>
+                    <tr>
+                        <td>GDP Growth</td>
+                        <td>3.1% to 3.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Money Supply (M2)</td>
+                        <td>3.1% to 3.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin Price</td>
+                        <td>$64,000</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin Market Value</td>
+                        <td>$1.28T</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin Mined So far</td>
+                        <td>19.99M of 21M</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br>
+            The IMF estimates world output in 2026 at about $126.3 trillion, with growth around 3.1%.
+            <br>
+            <h4>An interesting comparison</h4>
+            * World GDP: ~$126 trillion/year.<br>
+            * World money supply: ~$102 trillion.<br>
+            * Bitcoin market value: ~$1.3 trillion.<br>
+            <br>
+            Thus, all the bitcoins in existence are worth roughly 1% of annual world economic output
+            and about 1.3% of the world’s broad money supply.
+            <br>
+            <h4>The World Today</h4>
+            Viewed as a hierarchy of wealth, the world presently looks something like:
+            <br><br>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Real Estate</td>
+                        <td>$380T</td>
+                    </tr>
+                    <tr>
+                        <td>Bonds</td>
+                        <td>140T</td>
+                    </tr>
+                    <tr>
+                        <td>Stocks</td>
+                        <td>104T</td>
+                    </tr>
+                    <tr>
+                        <td>World GDP</td>
+                        <td>$126T</td>
+                    </tr>
+                    <tr>
+                        <td>Money Supply (M2)</td>
+                        <td>$102T</td>
+                    </tr>
+                    <tr>
+                        <td>Gold</td>
+                        <td>$31T</td>
+                    </tr>
+                    <tr>
+                        <td>Silver</td>
+                        <td>$4.5T</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin</td>
+                        <td>$1.3T</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br>
+            Which is rather remarkable, considering Bitcoin did not exist before 2009 
+            and is only seventeen years old.
+            <br>
+            <h4>The "Typical" Investor</h4>
+            The above is published data. But a typical investor must decide where he 
+            should be on this new scale? Given The 20M bitcoin limit, how much of each 
+            does his holding represent? Lets take sample of a typical small investor as:
+
+            Investment World Sample Holding
+            Real Estate $380T $1M
+            Stocks&Bonds $280T $200K
+            Gold&Silver $35T $30K
+            Bitcoin $1.3T $30K
+            
+            <h2>The Pundits</h2>
+            Mark Moss on the "Bitcoin Magazine Podcast suggesting that Bitcoin could
+            be worth $15M in 40 years.
+            <video controls src="FIA\video\Moss.mp4"></video>
+            <div class="title">Bitcoin Is Our Saviour</div>
+            <br>
+            <br>
+            Jeremy Grantham on "Diara Of A CEO" Podcast suggesting that Bitcoin will go
+            to zero within 5 years, or during the coming crash.
+            <video controls src="FIA\video\Grantham.mp4"></video>
+            <div class="title">Bitcoin Is Doomed</div>
+            <br>
+            <br>
+            Ray Dalio on "LSE Fireside Chat" suggesting that a major crash is comming
+            soon.
+            <video controls src="FIA\video\Dalio.mp4"></video>
+            <div class="title">Bitcoin Is Irrelivant</div>
+            <br>
+            <br>
+            Jessey Myers on ¨Blockchain to Bitcoin¨ Telling Alison Proctor that Bitcoin
+            is the future of Money
+            <video controls src="FIA\video\Myers.mp4"></video>
+            <div class="title">Bitcoin Is the Future</div>
+            <br>
+            
+            Visit Alison´s <a href="https://www.youtube.com/@BlockchainToBitcoin"> 
+            YouTube Page </a> to hear the rest of her interviews with the Bitcoin 
+            Intelegencia
+        </div>
+    </div>
+
+    <!-- Stop multiple video tracts playing at once -->
+    <script>
+        const players = document.querySelectorAll("video");
+
+        players.forEach(p => {
+            p.addEventListener("play", () => {
+                players.forEach(other => {
+                    if (other !== p) other.pause();
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
